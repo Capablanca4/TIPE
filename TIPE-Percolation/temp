@@ -1,0 +1,16 @@
+
+# MatriceInit = deepcopy(MatriceBis)
+for i in range(20):
+            for j in range(20):
+                self.MatriceInit[j][i]=self.MatriceBis[j][i]
+
+
+                    indice1=i
+                    indice2=i
+                    while indice1!=19 and self.MatriceInit[j][indice1+1]==0 :
+                        indice1+=1
+                        self.MatriceBis[j][indice1]=1
+                    while indice2!=0 and self.MatriceInit[j][indice2-1]==0:
+                        indice2-=1
+                        self.MatriceBis[j][indice2]=1
+                        self.Percolation=True
